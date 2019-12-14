@@ -2,13 +2,30 @@
   "name": "microservice_graphql_server",
   "version": "1.0.3",
   "description": "Micro Service GrapQL Server",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/fearless23/graphQL_MicroSrv_Boilerplate.git"
+  },
+  "engines": {
+    "node": "12.x",
+    "npm": "6.x"
+  },
   "main": "src/server.js",
   "scripts": {
-    "serve": "node src/server.js",
+    "start": "node src/server.js",
     "serve-simple": "node src/basic_Server.js"
   },
-  "keywords": ["graphql", "micro service", "service", "axios", "apollo"],
-  "author": "Jaspreet Singh aka fearless",
+  "keywords": [
+    "graphql",
+    "micro service",
+    "service",
+    "axios",
+    "apollo"
+  ],
+  "author": {
+    "name": "Jaspreet Singh",
+    "email": "jaspreetsingh2379@gmail.com"
+  },
   "license": "ISC",
   "dependencies": {
     "apollo-server": "^2.9.13",
