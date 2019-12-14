@@ -3,7 +3,7 @@ const { graphQL_Config } = require("./GraphQL/_graphQL.config");
 
 const server = new ApolloServer(graphQL_Config);
 server
-  .listen()
+  .listen({ port: process.env.PORT || 4000 })
   .then(({ url }) => console.log(`Server started at ${url}`))
   .catch(err => console.log(err));
 
